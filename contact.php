@@ -19,9 +19,6 @@
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
                     <label for="floatingTextarea2">Comments</label>
                 </div>
-                <div class="clontainer">
-
-                </div>
             </div>
         </div>
     </section>
