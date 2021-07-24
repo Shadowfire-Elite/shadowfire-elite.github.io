@@ -1,0 +1,170 @@
+/** General Styling */
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
+
+/** Main page  */
+.carousel img {
+  max-height: 500px;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+#content img {
+  width: 300px;
+  height: 250px;
+}
+
+.line {
+  border-top: 5px double black;
+  background-color: white;
+  width: 250px;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .line {
+    width: 500px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/** Footer */
+footer {
+  background-color: #555;
+  color: #bbb;
+}
+
+footer a {
+  text-decoration: none;
+  color: #eee;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+
+footer h4,
+footer h2 {
+  color: #fff;
+  font-family: "Merriweather", serif;
+}
+
+/** Footer flex */
+@media (min-width: 1200px) {
+  .tabs {
+    flex: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  #news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #contact {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  #news,
+  .links,
+  #brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .spacing {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+/** Footer Socials */
+.fab {
+  color: inherit;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  color: #3b579d;
+}
+
+.fa-twitter {
+  color: #1bb2e9;
+}
+
+.fa-instagram {
+  color: rgb(204, 39, 149);
+}
+
+.fa-youtube {
+  color: #ed3f41;
+}
+
+.fa-whatsapp {
+  color: #45bf54;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-linkedin {
+  color: #0176b5;
+}
+
+/** Footer email sign up */
+footer form input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+}
+
+/** Footer Legal */
+.ft-legal {
+  background-color: #333;
+}
+
+.ft-legal li {
+  margin: 0.125rem 0.625rem;
+}
+
+/** Contact */
+#floatingTextarea2 {
+  height: 30%;
+}
