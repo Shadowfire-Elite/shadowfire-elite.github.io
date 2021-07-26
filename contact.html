@@ -1,10 +1,10 @@
-<!-- <?php include 'inc/header.php'; ?> -->
+<?php include 'inc/header.html'; ?>
 <!-- Header Start -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Template</title>
+    <title>Home</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-3">
         <div class="container">
-            <a class="navbar-brand" href="template.php">
+            <a class="navbar-brand" href="index.html">
                 <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top" />
                 Bootstrap
             </a>
@@ -27,15 +27,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <a class="nav-link selector active" aria-current="page" href="template.php">
+                    <a class="nav-link active" aria-current="page" href="index.html">
                         <i class="fas fa-home fa-fw"></i> Home</a>
-                    <a class="nav-link selector" href="#flyers">
+                    <a class="nav-link" href="flyers.html">
                         <i class="fas fa-newspaper fa-fw"></i> Flyers</a>
-                    <a class="nav-link selector" href="#promotions">
+                    <a class="nav-link" href="promotions.html">
                         <i class="fas fa-tag fa-fw"></i> Promotions</a>
-                    <a class="nav-link selector" href="#grocery">
+                    <a class="nav-link" href="grocery.html">
                         <i class="fas fa-shopping-cart fa-fw"></i> Grocery</a>
-                    <a class="nav-link selector" href="contact.php">
+                    <a class="nav-link" href="contact.html">
                         <i class="fas fa-envelope fa-fw"></i> Contact</a>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -162,11 +162,14 @@
 
     <script>
         $(document).ready(function () {
-            $(".navbar-nav a").click(function () {
-                $("a.selector.active").removeAttr("aria-current");
-                $("a.selector.active").removeClass("active");
-                $(this).addClass("active");
-                $(this).attr("aria-current", "page");
+            $('.navbar-nav a[href*=".html"]').each(function () {
+                if (String(location).includes($(this).attr('href'))) {
+                    $('a.nav-link.active').removeAttr('aria-current');
+                    $('a.nav-link.active').removeClass('active');
+                    $(this).addClass('active');
+                    $(this).attr('aria-current', 'page');
+                    document.title = $(this).text().trim();
+                }
             });
         });
     </script>
@@ -174,4 +177,5 @@
 
 </html>
 <!-- Footer End -->
-<!-- <?php include 'inc/footer.php'; ?> -->
+
+<!-- <?php include 'inc/footer.html'; ?> -->
