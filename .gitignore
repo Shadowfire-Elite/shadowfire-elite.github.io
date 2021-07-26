@@ -1,6 +1,6 @@
-/assets/css/*.css
-/assets/js/*.js
-/assets/webfonts/
+/assets/css/*
+/assets/js/*
+/assets/webfonts/*
 test.php
 test.html
-inc/*.php
+inc/*
