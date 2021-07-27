@@ -64,7 +64,7 @@ footer {
 .form-control:focus,
 .form-control:active {
   box-shadow: none;
-  border-color: #46b5d1 !important;
+  border-color: #46b5d1;
   border-radius: unset;
 }
 
