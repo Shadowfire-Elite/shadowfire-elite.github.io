@@ -77,6 +77,19 @@ footer {
   border-radius: unset;
 }
 
+.form-floating > label {
+  padding: 1rem 0.25rem 0 0.15rem;
+}
+
+.form-floating > .form-control {
+  padding: 1rem 0.25rem 0 0.3rem;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-bottom: 0;
+}
+
 /** Footer */
 footer {
   background-color: #555;
