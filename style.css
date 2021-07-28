@@ -137,7 +137,20 @@ footer h2 {
   font-family: "Merriweather", serif;
 }
 
+#contact {
+  color: #eee;
+}
+
 /** Footer flex */
+@media (min-width: 1400px) {
+  .tabs {
+    margin-right: 2%;
+  }
+  #contact {
+    padding-right: 5% !important;
+  }
+}
+
 @media (min-width: 1200px) {
   .tabs {
     flex: 0;
@@ -156,7 +169,7 @@ footer h2 {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   #news,
   .links,
   #brand {
@@ -229,9 +242,4 @@ footer form input[type="submit"] {
 
 .ft-legal li {
   margin: 0.125rem 0.625rem;
-}
-
-/** Contact */
-#floatingTextarea2 {
-  height: 30%;
 }
