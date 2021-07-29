@@ -1,7 +1,7 @@
 /** General Styling */
 * {
   box-sizing: border-box;
-  font-family: "Poppins", "Lato", sans-serif;
+  font-family: "Poppins", Lato, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -45,6 +45,30 @@ footer {
 @media (min-width: 768px) {
   .line {
     width: 500px;
+  }
+}
+
+/** Products */
+.color {
+  background-color: #f7f4ef;
+}
+
+.product,
+.product div {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  .product div {
+    text-align: start;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .product div {
+    text-align: center;
+    padding-bottom: 2rem;
   }
 }
 
