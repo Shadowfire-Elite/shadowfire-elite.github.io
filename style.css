@@ -49,6 +49,16 @@ footer {
 }
 
 /** Products */
+.underline {
+  color: #212121;
+  position: relative;
+  font-size: 2.5em;
+}
+
+.underline + hr {
+  border-top: 10px double red;
+}
+
 .color {
   background-color: #f7f4ef;
 }
@@ -73,6 +83,41 @@ footer {
 }
 
 /** Services */
+.services {
+  color: #212121;
+  padding-bottom: 0.5rem;
+  position: relative;
+  font-size: 2.5em;
+}
+
+.services:after {
+  content: "";
+  background: #fa1818;
+  height: 2px;
+  width: 10%;
+  position: absolute;
+  bottom: 0%;
+  left: 45%;
+}
+
+.qstat i {
+  font-size: 2.5em;
+  color: #fa1818;
+}
+
+.qstat h3 {
+  font-size: 1.2em;
+  color: #212121;
+  text-transform: capitalize;
+  margin: 2em 0 1em;
+}
+
+.qstat p {
+  font-size: 14px;
+  color: #999;
+  line-height: 2em;
+}
+
 .stats {
   background: url(assets/imgs/restaurant.jpg) no-repeat 0px 0px;
   min-height: 300px;
