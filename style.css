@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  background-color: lightcyan;
 }
 body {
   display: flex;
@@ -22,7 +23,7 @@ footer {
 }
 
 /** Main page  */
-.carousel img {
+#slider img {
   max-height: 500px;
 }
 
@@ -30,7 +31,7 @@ footer {
   flex-grow: 0;
 }
 
-#content img {
+.offers img {
   width: 300px;
   height: 250px;
 }
@@ -63,20 +64,20 @@ footer {
   background-color: #f7f4ef;
 }
 
-.product,
-.product div {
+.products,
+.products div {
   display: flex;
   justify-content: center;
 }
 
 @media (min-width: 1200px) {
-  .product div {
+  .products div {
     text-align: start;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .product div {
+  .products div {
     text-align: center;
     padding-bottom: 2rem;
   }
@@ -102,7 +103,7 @@ footer {
 
 .qstat i {
   font-size: 2.5em;
-  color: #fa1818;
+  color: #18a0fa;
 }
 
 .qstat h3 {
@@ -114,8 +115,52 @@ footer {
 
 .qstat p {
   font-size: 14px;
-  color: #999;
+  color: rgb(92, 92, 92);
   line-height: 2em;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.hd {
+  font-size: 25px;
+  font-weight: 550;
+}
+
+.card.hover,
+.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card-content i {
+  margin-bottom: 35px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  margin: 2px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+button.focus,
+button:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.ft {
+  margin-top: 25px;
+}
+
+.chk {
+  margin-bottom: 5px;
+}
+
+.rck {
+  margin-top: 20px;
+  padding-bottom: 15px;
 }
 
 .stats {
@@ -148,8 +193,11 @@ footer {
   margin: 0.5em 0 0;
 }
 
+/* ! TODO: */
+/* ! */
+
 /** Contact */
-#message {
+.message {
   height: 150px;
 }
 
@@ -178,20 +226,20 @@ footer {
 }
 
 @media (max-width: 1199.98px) {
-  #contactPage {
+  .contactPage {
     display: flex;
     flex-direction: column;
   }
 }
 
-#map {
+.map-responsive {
   overflow: hidden;
   padding-bottom: 50%;
   position: relative;
   height: 0;
 }
 
-#map iframe {
+.map-responsive iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -235,7 +283,7 @@ footer h2 {
   font-family: "Merriweather", serif;
 }
 
-#contact {
+.contact {
   color: #eee;
 }
 
@@ -244,7 +292,7 @@ footer h2 {
   .tabs {
     margin-right: 2%;
   }
-  #contact {
+  .contact {
     padding-right: 5% !important;
   }
 }
@@ -256,21 +304,21 @@ footer h2 {
 }
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  #news {
+  .news {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #contact {
+  .contact {
     flex: 0 0 auto;
     width: 25%;
   }
 }
 
 @media (max-width: 1199.98px) {
-  #news,
+  .news,
   .links,
-  #brand {
+  .brand {
     display: flex;
     flex-direction: column;
     align-items: center;
