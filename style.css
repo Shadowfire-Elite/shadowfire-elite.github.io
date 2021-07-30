@@ -206,6 +206,7 @@ button:focus {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   font-size: 16px;
+  background-color: transparent;
 }
 
 .form-control:focus,
@@ -213,6 +214,7 @@ button:focus {
   box-shadow: none;
   border-color: #46b5d1;
   border-radius: unset;
+  background-color: transparent;
 }
 
 .form-floating > label,
