@@ -1,4 +1,4 @@
-/** General Styling */
+/** ANCHOR General Styling */
 * {
   box-sizing: border-box;
   font-family: "Poppins", Lato, sans-serif;
@@ -22,7 +22,7 @@ footer {
   flex-shrink: 0;
 }
 
-/** Main page  */
+/** ANCHOR Main page  */
 #slider img {
   max-height: 500px;
 }
@@ -49,7 +49,7 @@ footer {
   }
 }
 
-/** Products */
+/** ANCHOR Products */
 .underline {
   color: #212121;
   position: relative;
@@ -83,7 +83,7 @@ footer {
   }
 }
 
-/** Services */
+/** ANCHOR Services */
 .services {
   color: #212121;
   padding-bottom: 0.5rem;
@@ -193,10 +193,9 @@ button:focus {
   margin: 0.5em 0 0;
 }
 
-/* ! TODO: */
-/* ! */
+/* TODO */
 
-/** Contact */
+/** ANCHOR Contact */
 .message {
   height: 150px;
 }
@@ -263,7 +262,7 @@ button:focus {
   color: #fff;
 }
 
-/** Footer */
+/** ANCHOR Footer */
 footer {
   background-color: #555;
   color: #bbb;
@@ -342,7 +341,7 @@ footer h2 {
   }
 }
 
-/** Footer Socials */
+/** ANCHOR Footer Socials */
 .fab {
   color: inherit;
   text-decoration: none;
@@ -382,13 +381,13 @@ footer h2 {
   color: #0176b5;
 }
 
-/** Footer email sign up */
+/** ANCHOR Footer email sign up */
 footer form input[type="submit"] {
   background-color: #00d188;
   color: #fff;
 }
 
-/** Footer Legal */
+/** ANCHOR Footer Legal */
 .ft-legal {
   background-color: #333;
 }
