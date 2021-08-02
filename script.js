@@ -9,17 +9,11 @@ $(document).ready(function () {
       document.title = $(this).text().trim();
     }
   });
-  // Stats counter
-  $(".counter").counterUp({
-    delay: 10,
-    time: 1000,
-  });
-
   // Back To Top Button
   var btn = $("#button");
 
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 300) {
+    if ($(window).scrollTop() > 30) {
       btn.addClass("show");
     } else {
       btn.removeClass("show");
@@ -30,7 +24,11 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, "300");
   });
-
+  // Stats counter
+  $(".counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
   //   $(".testimonial-carousel").slick({
   //     infinite: true,
   //     slidesToShow: 1,
