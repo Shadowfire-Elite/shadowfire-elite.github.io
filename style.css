@@ -78,17 +78,17 @@ a {
   color: #252525;
   margin-bottom: 10px;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  position: relative;
 }
 
 .testimonial-heading span:after {
   content: "";
   background: #e7b93a;
   height: 2px;
-  width: 10%;
+  width: 50%;
   position: absolute;
-  top: 14%;
-  left: 45%;
+  bottom: 0%;
+  left: 25%;
 }
 
 .testimonial-box {
