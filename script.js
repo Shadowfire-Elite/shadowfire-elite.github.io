@@ -23,6 +23,12 @@ $(document).ready(function () {
     $(window).scrollTop(0);
   });
 
+  // Footer Navigation Scrolling
+  $('a[href*="#"]').click(function () {
+    $(window).scroll($(this).attr("href"));
+    $('a[href*="#"]').css("scroll-margin-top", "100px");
+  });
+
   // Stats counter
   $(".counter").counterUp({
     delay: 10,
