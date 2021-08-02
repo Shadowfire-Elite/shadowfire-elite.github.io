@@ -27,7 +27,7 @@ $(document).ready(function () {
   $('a[href*="#"]').each(function () {
     if (String(location).includes($(this).attr("href"))) {
       var id = $(this).attr("href").split("#")[1];
-      $("#" + String(id)).css("scroll-margin-top", "100px");
+      $(String("#" + String(id))).css("scroll-margin-top", "100px");
       $(window).scroll($(this).attr("href"));
     }
   });
