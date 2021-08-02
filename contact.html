@@ -39,6 +39,7 @@
             </div>
         </div>
     </nav>
+    <a id="button"></a>
     <!-- Header End -->
     <main>
         <section>
@@ -221,19 +222,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.navbar-nav a[href*=".html"]').each(function () {
-                if (String(location).includes($(this).attr('href'))) {
-                    $('a.nav-link.active').removeAttr('aria-current');
-                    $('a.nav-link.active').removeClass('active');
-                    $(this).addClass('active');
-                    $(this).attr('aria-current', 'page');
-                    document.title = $(this).text().trim();
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

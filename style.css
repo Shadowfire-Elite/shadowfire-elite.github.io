@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   height: 100%;
@@ -21,6 +20,46 @@ main {
 }
 footer {
   flex-shrink: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/** Back to Top Button */
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 75px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /** ANCHOR Main page  */
@@ -274,7 +313,6 @@ footer {
 }
 
 footer a {
-  text-decoration: none;
   color: #eee;
 }
 

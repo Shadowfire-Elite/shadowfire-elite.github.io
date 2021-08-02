@@ -39,6 +39,7 @@
             </div>
         </div>
     </nav>
+    <a id="button"></a>
     <!-- Header End -->
     <main>
         <div class="container">
@@ -257,23 +258,7 @@
     <script src="assets/js/jquery.counterup.js"></script>
     <!-- Stats-Number-Scroller-Animation-JavaScript -->
 
-    <script>
-        $(document).ready(function () {
-            $('.navbar-nav a[href*=".html"]').each(function () {
-                if (String(location).includes($(this).attr('href'))) {
-                    $('a.nav-link.active').removeAttr('aria-current');
-                    $('a.nav-link.active').removeClass('active');
-                    $(this).addClass('active');
-                    $(this).attr('aria-current', 'page');
-                    document.title = $(this).text().trim();
-                }
-            });
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
