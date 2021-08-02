@@ -24,9 +24,12 @@ $(document).ready(function () {
   });
 
   // Footer Navigation Scrolling
-  $('a[href*="#"]').click(function () {
-    $(window).scroll($(this).attr("href"));
-    $('a[href*="#"]').css("scroll-margin-top", "100px");
+  $('a[href*="#"]').each(function () {
+    if (String(location).includes($(this).attr("href"))) {
+      var id = $(this).attr("href").split("#")[1];
+      $("#" + String(id)).css("scroll-margin-top", "100px");
+      $(window).scroll($(this).attr("href"));
+    }
   });
 
   // Stats counter

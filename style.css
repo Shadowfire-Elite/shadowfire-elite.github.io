@@ -405,7 +405,7 @@ button:focus {
 }
 
 @media (max-width: 1199.98px) {
-  #contact {
+  .contactPage {
     display: flex;
     flex-direction: column;
   }
