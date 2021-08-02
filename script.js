@@ -9,9 +9,9 @@ $(document).ready(function () {
       document.title = $(this).text().trim();
     }
   });
+
   // Back To Top Button
   var btn = $("#button");
-
   $(window).scroll(function () {
     if ($(window).scrollTop() > 30) {
       btn.addClass("show");
@@ -19,11 +19,10 @@ $(document).ready(function () {
       btn.removeClass("show");
     }
   });
-
-  btn.on("click", function (e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "300");
+  btn.click(function () {
+    $(window).scrollTop(0);
   });
+
   // Stats counter
   $(".counter").counterUp({
     delay: 10,
