@@ -10,6 +10,7 @@ html,
 body {
   height: 100%;
   background-color: lightcyan;
+  scroll-behavior: smooth;
 }
 body {
   display: flex;
@@ -29,6 +30,10 @@ footer {
 
 .navbar-collapse {
   flex-grow: 0;
+}
+
+#slider i {
+  font-size: 36px;
 }
 
 .offers img {
@@ -95,10 +100,10 @@ footer {
   content: "";
   background: #fa1818;
   height: 2px;
-  width: 10%;
+  width: 16%;
   position: absolute;
   bottom: 0%;
-  left: 45%;
+  left: 42%;
 }
 
 .qstat i {
