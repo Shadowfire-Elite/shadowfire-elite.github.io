@@ -23,15 +23,6 @@ $(document).ready(function () {
     $(window).scrollTop(0);
   });
 
-  // Footer Navigation Scrolling
-  $('a[href*="#"]').each(function () {
-    if (String(location).includes($(this).attr("href"))) {
-      var id = $(this).attr("href").split("#")[1];
-      $(String("#" + String(id))).css("scroll-margin-top", "100px");
-      $(window).scroll($(this).attr("href"));
-    }
-  });
-
   // Stats counter
   $(".counter").counterUp({
     delay: 10,

@@ -14,6 +14,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  padding-top: 4rem;
 }
 main {
   flex: 1 0 auto;
@@ -463,6 +464,11 @@ footer h2 {
 
 .contact {
   color: #eee;
+}
+
+/** Footer Navigation Scrolling */
+.ft-nav {
+  scroll-margin-top: 100px;
 }
 
 /** Footer flex */
