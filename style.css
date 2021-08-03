@@ -345,7 +345,7 @@ button:focus {
 }
 
 .stats {
-  background: url(assets/imgs/restaurant.jpg) no-repeat 0px 0px;
+  background: url(assets/images/restaurant.jpg) no-repeat 0px 0px;
   min-height: 300px;
   color: #eee;
 }
