@@ -255,8 +255,17 @@ a {
 
 /* TODO: Swiper Testimonials */
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  width: 800px;
+  height: 500px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 }
 
 /** ANCHOR Products */

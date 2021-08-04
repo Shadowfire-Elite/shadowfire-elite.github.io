@@ -32,6 +32,7 @@ $(document).ready(function () {
     // If we need pagination
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
 
     // Navigation arrows
@@ -43,6 +44,14 @@ $(document).ready(function () {
     // And if we need scrollbar
     scrollbar: {
       el: ".swiper-scrollbar",
+      draggable: true,
+      snapOnRelease: true,
+    },
+
+    // autoplay
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
   });
 
