@@ -94,11 +94,16 @@ a {
   }
 }
 
-/* TODO: Testimonials */
-a {
-  text-decoration: none;
+@media (max-width: 576px) {
+  .carousel-control-next {
+    right: 5%;
+  }
+  .carousel-control-prev {
+    left: 5%;
+  }
 }
 
+/** Testimonials */
 .testimonial-heading {
   letter-spacing: 1px;
   margin: 30px 0px;
