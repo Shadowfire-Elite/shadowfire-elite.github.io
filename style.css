@@ -63,6 +63,12 @@ a {
   visibility: visible;
 }
 
+@media (max-width: 576px) {
+  #button {
+    bottom: 10px;
+  }
+}
+
 /** ANCHOR Main page  */
 #slider img {
   max-height: 500px;
@@ -100,6 +106,12 @@ a {
   }
   .carousel-control-prev {
     left: 5%;
+  }
+  #slider i {
+    font-size: 1.5em !important;
+  }
+  .carousel-indicators button {
+    width: 1.5em !important;
   }
 }
 
