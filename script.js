@@ -11,7 +11,7 @@ $(document).ready(function () {
   });
 
   // Back To Top Button
-  var btn = $("#button");
+  var btn = $("#back-to-top");
   $(window).scroll(function () {
     if ($(window).scrollTop() > 30) {
       btn.addClass("show");
