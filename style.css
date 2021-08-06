@@ -39,6 +39,13 @@ a {
   z-index: 1000;
 }
 
+@media (min-width: 786px) {
+  #back-to-top:hover {
+    cursor: pointer;
+    color: #333;
+  }
+}
+
 #back-to-top:active {
   color: #555;
 }
@@ -46,13 +53,6 @@ a {
 #back-to-top.show {
   opacity: 1;
   visibility: visible;
-}
-
-@media (min-width: 786px) {
-  #back-to-top:hover {
-    cursor: pointer;
-    color: #333;
-  }
 }
 
 @media (max-width: 576px) {
