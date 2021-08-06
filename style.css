@@ -51,13 +51,15 @@ a {
 #back-to-top.show {
   opacity: 1;
   visibility: visible;
-  color: #ff9800;
 }
 
 @media (max-width: 576px) {
   #back-to-top {
     bottom: 10px;
     font-size: 1.5em;
+  }
+  #back-to-top.show {
+    color: #ff9800;
   }
 }
 
