@@ -39,9 +39,11 @@ a {
   z-index: 1000;
 }
 
-#back-to-top:hover {
-  cursor: pointer;
-  color: #333;
+@media (min-width: 786px) {
+  #back-to-top:hover {
+    cursor: pointer;
+    color: #333;
+  }
 }
 
 #back-to-top:active {
@@ -56,11 +58,9 @@ a {
 @media (max-width: 576px) {
   #back-to-top {
     bottom: 10px;
+    right: 0px;
     font-size: 1.5em;
   }
-  /* #back-to-top.show {
-    color: #ff9800;
-  } */
 }
 
 /* Main page  */

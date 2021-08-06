@@ -15,6 +15,9 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(window).scrollTop() > 30) {
       btn.addClass("show");
+      // if ($(btn).css("visibility") == "hidden") {
+      //   $(btn).unbind("mouseenter mouseleave");
+      // }
     } else {
       btn.removeClass("show");
     }
